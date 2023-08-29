@@ -60,6 +60,7 @@ unzip Mobile_Autopsy.zip
 del adb-tool.zip
 del usb-driver.zip
 del Mobile_Autopsy.zip
+del unzip.exe
 cd Mobile_Autopsy
 move adb_enable.exe platform-tools
 move com.wanam-344.apk platform-tools
