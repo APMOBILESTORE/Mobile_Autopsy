@@ -50,7 +50,7 @@ echo                ADB_Autopsy Installer
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
-echo Downloading Data... 5.4%
+echo Downloading Supporting Files...
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/APMOBILESTORE/Mobile_Autopsy/main/mobile_autopsy.zip', 'Mobile_Autopsy.zip')"
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/APMOBILESTORE/Mobile_Autopsy/main/unzip.exe', 'unzip.exe')"
 cls
