@@ -75,6 +75,7 @@ move DPInst_x86.exe usb_driver
 cd platform-tools
 md App_list
 md Screen_shot
+md App_Backup
 cd..
 "%~dp0Mobile_Autopsy\usb-driver\DPInst_x64.exe"
 cls
