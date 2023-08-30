@@ -2,6 +2,9 @@
 title Mobile Autopsy Setup
 color 2f
 mode con:cols=52 lines=18
+taskkill /F /IM fastboot.exe <nul
+taskkill /F /IM adb.exe <nul
+cls
 echo ====================================================
 echo                Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
@@ -9,8 +12,6 @@ echo.
 echo ====================================================
 echo Internet Conncting...
 popd
-taskkill /F /IM fastboot.exe <nul
-taskkill /F /IM adb.exe <nul
 rmdir /Q /S Mobile_Autopsy > nul 2>&1
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 3" > nul 2>&1
 cls
