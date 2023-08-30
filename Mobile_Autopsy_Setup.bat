@@ -78,4 +78,4 @@ cls
 "%~dp0Mobile_Autopsy\usb-driver\DPInst_x86.exe"
 cls
 "%~dp0Mobile_Autopsy\service.bat"
-exit
+DEL /Q Mobile_Autopsy_Setup.bat && exit
