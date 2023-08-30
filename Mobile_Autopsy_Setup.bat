@@ -1,19 +1,21 @@
 @echo off
-title ADB_Autopsy Installer
+title Mobile Autopsy Setup
 color 2f
 mode con:cols=52 lines=18
 echo ====================================================
-echo                ADB_Autopsy Installer
+echo                Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
 echo Internet Conncting...
 popd
-rmdir /Q /S ADB_Autopsy > nul 2>&1
+taskkill /F /IM fastboot.exe <nul
+taskkill /F /IM adb.exe <nul
+rmdir /Q /S Mobile_Autopsy > nul 2>&1
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 3" > nul 2>&1
 cls
 echo ====================================================
-echo                ADB_Autopsy Installer
+echo                Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -22,7 +24,7 @@ echo Fatching Data...
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 4" > nul 2>&1
 cls
 echo ====================================================
-echo                ADB_Autopsy Installer
+echo                Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -30,7 +32,7 @@ echo Analyzing Data...
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 10" > nul 2>&1
 cls
 echo ====================================================
-echo                ADB_Autopsy Installer
+echo                Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -38,7 +40,7 @@ echo Downloading Android SDK Platform-Tools...
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/platform-tools-latest-windows.zip', 'platform-tools.zip')"
 cls
 echo ====================================================
-echo                ADB_Autopsy Installer
+echo                Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -46,7 +48,7 @@ echo Downloading Google USB driver...
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/usb_driver_r13-windows.zip', 'usb-driver.zip')"
 cls
 echo ====================================================
-echo                ADB_Autopsy Installer
+echo                Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
