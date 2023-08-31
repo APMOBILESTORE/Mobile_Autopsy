@@ -13,7 +13,7 @@ echo ====================================================
 echo Internet Conncting...
 popd
 rmdir /Q /S Mobile_Autopsy > nul 2>&1
-PowerShell -executionpolicy bypass -Command "Start-Sleep -s 3" > nul 2>&1
+PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 echo ====================================================
 echo                Mobile Autopsy Setup
@@ -22,7 +22,7 @@ echo.
 echo ====================================================
 echo Fatching Data...
 
-PowerShell -executionpolicy bypass -Command "Start-Sleep -s 4" > nul 2>&1
+PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 echo ====================================================
 echo                Mobile Autopsy Setup
@@ -30,7 +30,7 @@ echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
 echo Analyzing Data...
-PowerShell -executionpolicy bypass -Command "Start-Sleep -s 10" > nul 2>&1
+PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 
 echo ====================================================
