@@ -6,7 +6,7 @@ taskkill /F /IM fastboot.exe <nul
 taskkill /F /IM adb.exe <nul
 cls
 echo ====================================================
-echo                Mobile Autopsy Setup
+echo                 Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -16,7 +16,7 @@ rmdir /Q /S Mobile_Autopsy > nul 2>&1
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 echo ====================================================
-echo                Mobile Autopsy Setup
+echo                 Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -25,7 +25,7 @@ echo Fatching Data...
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 echo ====================================================
-echo                Mobile Autopsy Setup
+echo                 Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -34,11 +34,11 @@ PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 
 echo ====================================================
-echo                Mobile Autopsy Setup
+echo                 Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
-echo Downloading Supporting Files...
+echo Downloading Support Files...
 
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/APMOBILESTORE/Mobile_Autopsy/main/mobile_autopsy.zip', 'Mobile_Autopsy.zip')"
 
@@ -55,7 +55,7 @@ move unzip.exe Mobile_Autopsy
 cls
 
 echo ====================================================
-echo                Mobile Autopsy Setup
+echo                 Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
@@ -64,7 +64,7 @@ PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).Download
 cls
 
 echo ====================================================
-echo                Mobile Autopsy Setup
+echo                 Mobile Autopsy Setup
 echo            By apmobilestore @ Freelancer
 echo.
 echo ====================================================
