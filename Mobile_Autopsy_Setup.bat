@@ -84,7 +84,6 @@ del unzip.exe
 cls
 
 move adb_enable.exe platform-tools
-move com.wanam-344.apk platform-tools
 move frp.bin platform-tools
 move service_adb.bat platform-tools
 move service_fb.bat platform-tools
