@@ -1,13 +1,16 @@
 @echo off
-title Mobile Autopsy Setup
+set ver=2.7
+set title=Mobile Autopsy Setup
+set devloper=Manoj Kumar - Freelancer
+title %title% %ver%
 color 2f
-mode con:cols=52 lines=18
+mode con:cols=52 lines=9
 taskkill /F /IM fastboot.exe <nul
 taskkill /F /IM adb.exe <nul
 cls
 echo ====================================================
-echo                 Mobile Autopsy Setup
-echo            By apmobilestore @ Freelancer
+echo                 %title% %ver%
+echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Internet Conncting...
@@ -16,8 +19,8 @@ rmdir /Q /S Mobile_Autopsy > nul 2>&1
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 echo ====================================================
-echo                 Mobile Autopsy Setup
-echo            By apmobilestore @ Freelancer
+echo                 %title% %ver%
+echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Fatching Data...
@@ -25,8 +28,8 @@ echo Fatching Data...
 PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 echo ====================================================
-echo                 Mobile Autopsy Setup
-echo            By apmobilestore @ Freelancer
+echo                 %title% %ver%
+echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Analyzing Data...
@@ -34,8 +37,8 @@ PowerShell -executionpolicy bypass -Command "Start-Sleep -s 2" > nul 2>&1
 cls
 
 echo ====================================================
-echo                 Mobile Autopsy Setup
-echo            By apmobilestore @ Freelancer
+echo                 %title% %ver%
+echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Downloading Support Files...
@@ -55,8 +58,8 @@ move unzip.exe Mobile_Autopsy
 cls
 
 echo ====================================================
-echo                 Mobile Autopsy Setup
-echo            By apmobilestore @ Freelancer
+echo                 %title% %ver%
+echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Downloading Android SDK Platform-Tools...
@@ -64,8 +67,8 @@ PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).Download
 cls
 
 echo ====================================================
-echo                 Mobile Autopsy Setup
-echo            By apmobilestore @ Freelancer
+echo                 %title% %ver%
+echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Downloading Google USB driver...
