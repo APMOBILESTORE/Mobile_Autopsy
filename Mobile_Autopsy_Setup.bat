@@ -97,40 +97,48 @@ md Screen_shot
 md App_Backup
 cls
 
-cd..
 :: Creat Short cut
-set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
 
+cd..
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
 echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
 echo sLinkFile = "%USERPROFILE%\Desktop\Mobile Autopsy.lnk" >> %SCRIPT%
 echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
 echo oLink.TargetPath = "%~dp0mobile_autopsy\service.bat" >> %SCRIPT%
+echo oLink.WorkingDirectory = "%~dp0mobile_autopsy" >> %SCRIPT%
+echo oLink.IconLocation = "%SystemRoot%\system32\SHELL32.dll, 80" >> %SCRIPT%
+echo oLink.Description = "Manoj Kumar" >> %SCRIPT%
+echo oLink.HotKey = "ALT+CTRL+M" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
-
 cscript /nologo %SCRIPT%
 del %SCRIPT%
 
 set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
-
 echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
 echo sLinkFile = "%USERPROFILE%\Desktop\Aotupsy App Backup.lnk" >> %SCRIPT%
 echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
 echo oLink.TargetPath = "%~dp0mobile_autopsy\platform-tools\App_Backup" >> %SCRIPT%
+echo oLink.WorkingDirectory = "%~dp0mobile_autopsy" >> %SCRIPT%
+echo oLink.IconLocation = "%SystemRoot%\system32\SHELL32.dll, 85" >> %SCRIPT%
+echo oLink.Description = "Manoj Kumar" >> %SCRIPT%
+echo oLink.HotKey = "ALT+CTRL+B" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
-
 cscript /nologo %SCRIPT%
 del %SCRIPT%
 
 set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
-
 echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
 echo sLinkFile = "%USERPROFILE%\Desktop\Aotupsy Screen Shot.lnk" >> %SCRIPT%
 echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
 echo oLink.TargetPath = "%~dp0mobile_autopsy\platform-tools\Screen_shot" >> %SCRIPT%
+echo oLink.WorkingDirectory = "%~dp0mobile_autopsy" >> %SCRIPT%
+echo oLink.IconLocation = "%SystemRoot%\system32\SHELL32.dll, 19" >> %SCRIPT%
+echo oLink.Description = "Manoj Kumar" >> %SCRIPT%
+echo oLink.HotKey = "ALT+CTRL+S" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
-
 cscript /nologo %SCRIPT%
 del %SCRIPT%
+
 cd..
 
 ::"%~dp0Mobile_Autopsy\usb_driver\DPInst_x64.exe"
