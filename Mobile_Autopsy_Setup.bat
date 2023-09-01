@@ -63,7 +63,6 @@ echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Downloading Android SDK Platform-Tools...
-echo                           Press (Ctrl+C) For Cancle
 
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/platform-tools-latest-windows.zip', 'Mobile_Autopsy\platform-tools.zip')"
 cls
