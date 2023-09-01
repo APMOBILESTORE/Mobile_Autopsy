@@ -90,8 +90,6 @@ cls
 
 move adb_enable.exe platform-tools
 move frp.bin platform-tools
-move service_adb.bat platform-tools
-move service_fb.bat platform-tools
 move DPInst_x64.exe usb_driver
 move DPInst_x86.exe usb_driver
 cls
@@ -100,6 +98,7 @@ cd platform-tools
 md App_list
 md Screen_shot
 md App_Backup
+md Backup_Data
 cls
 
 :: Creat Short cut
