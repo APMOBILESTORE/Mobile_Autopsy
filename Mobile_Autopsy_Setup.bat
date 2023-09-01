@@ -4,7 +4,7 @@ set title=Mobile Autopsy Setup
 set devloper=Manoj Kumar - Freelancer
 title %title% %ver%
 color 2f
-mode con:cols=52 lines=9
+mode con:cols=52 lines=10
 taskkill /F /IM fastboot.exe <nul
 taskkill /F /IM adb.exe <nul
 cls
@@ -63,6 +63,8 @@ echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Downloading Android SDK Platform-Tools...
+echo                           Press (Ctrl+C) For Cancle
+
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/platform-tools-latest-windows.zip', 'Mobile_Autopsy\platform-tools.zip')"
 cls
 
@@ -72,6 +74,7 @@ echo            Developer: %devloper%
 echo.
 echo ====================================================
 echo Downloading Google USB driver...
+
 PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/usb_driver_r13-windows.zip', 'Mobile_Autopsy\usb-driver.zip')"
 cls
 
