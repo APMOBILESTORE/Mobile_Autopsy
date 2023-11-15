@@ -64,7 +64,7 @@ echo.
 echo ====================================================
 echo Downloading Android SDK Platform-Tools...
 
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/platform-tools-latest-windows.zip', 'Mobile_Autopsy\platform-tools.zip')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/APMOBILESTORE/Mobile_Autopsy/main/platform-tools_r34.0.5-windows.zip', 'Mobile_Autopsy\platform-tools.zip')"
 cls
 
 echo ====================================================
@@ -74,7 +74,7 @@ echo.
 echo ====================================================
 echo Downloading Google USB driver...
 
-PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://dl.google.com/android/repository/usb_driver_r13-windows.zip', 'Mobile_Autopsy\usb-driver.zip')"
+PowerShell -executionpolicy bypass -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/APMOBILESTORE/Mobile_Autopsy/main/usb_driver_r13-windows.zip', 'Mobile_Autopsy\usb-driver.zip')"
 cls
 
 cd Mobile_Autopsy
